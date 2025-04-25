@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Get full image name
-        uses: ./.github/actions/get-tag-docker-action
+        uses: ./.github/actions/concat-action
         id: tagger
         with:
           image_name: "${{ env.DOCKER_USERNAME }}/miau"
